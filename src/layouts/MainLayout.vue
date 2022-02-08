@@ -11,11 +11,36 @@
           active-class="active"
           align="justify"
         >
-          <q-route-tab name="home" label="Home" to="/#welcome" />
-          <q-route-tab name="portfolio" label="Portfolio" to="/#portfolio" />
-          <q-route-tab name="cv" label="Curriculum Vitae" to="/#cv" />
-          <q-route-tab name="about" label="About" to="/#about" />
-          <q-route-tab name="contact" label="Contact" to="/#contact" />
+          <q-route-tab
+            name="home"
+            label="Welcome"
+            to="/#welcome"
+            class="page-link"
+          />
+          <q-route-tab
+            name="portfolio"
+            label="Portfolio"
+            to="/#portfolio"
+            class="page-link"
+          />
+          <q-route-tab
+            name="cv"
+            label="Curriculum Vitae"
+            to="/#cv"
+            class="page-link"
+          />
+          <q-route-tab
+            name="about"
+            label="About"
+            to="/#about"
+            class="page-link"
+          />
+          <q-route-tab
+            name="contact"
+            label="Contact"
+            to="/#contact"
+            class="page-link"
+          />
         </q-tabs>
       </q-toolbar>
     </q-header>
@@ -27,16 +52,17 @@
 </template>
 
 <script>
-import { defineComponent, ref } from "vue";
+import { defineComponent, ref } from 'vue'
+import debounce from 'lodash.debounce'
 
 export default defineComponent({
-  name: "MainLayout",
+  name: 'MainLayout',
   setup() {
     // const leftDrawerOpen = ref(false);
 
-    return {};
+    return {}
   },
-});
+})
 </script>
 
 <style lang="scss">

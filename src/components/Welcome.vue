@@ -13,9 +13,10 @@
       <h5 class="q-ma-none text-grey-10">
         Full-Stack / Games / Web / Graphics
       </h5>
+      <h6 class="q-ma-none">Agile and adept to tackle any challenge.</h6>
     </div>
     <div class="text-center self-center q-mt-xl q-pt-md">
-      <h6 class="q-ma-none">Agile and adept to tackle any challenge.</h6>
+      <p class="q-ma-none text-subtitle1">Scroll for a brief overview.</p>
     </div>
     <q-icon
       name="mdi-chevron-down"
@@ -31,7 +32,7 @@
 export default {
   // name: 'ComponentName',
   setup() {
-    return {};
+    return {}
   },
-};
+}
 </script>
