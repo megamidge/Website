@@ -15,6 +15,7 @@ import HomePortfolio from "src/components/Home-Portfolio.vue";
 import HomeCV from "src/components/Home-CV.vue";
 import HomeAbout from "src/components/Home-About.vue";
 import HomeContact from "src/components/Home-Contact.vue";
+import { debounce } from "quasar";
 
 export default defineComponent({
   name: "Home",
