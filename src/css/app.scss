@@ -1,6 +1,6 @@
 // app global css in SCSS form
 .q-page, .q-header {
-  > *{
+  > *:not(.no-inset) {
     --contentWidth: min(100vw, 1200px);
     padding-left: max(2rem, 50vw - var(--contentWidth) / 2);
     padding-right: max(2rem, 50vw - var(--contentWidth) / 2);

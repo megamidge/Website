@@ -5966,6 +5966,11 @@ vue-loader@16.8.3:
     hash-sum "^2.0.0"
     loader-utils "^2.0.0"
 
+vue-pdf-embed@^1.1.4:
+  version "1.1.4"
+  resolved "http://bingoplus24.com:7991/vue-pdf-embed/-/vue-pdf-embed-1.1.4.tgz#80a95c313ffc4f76c14d9c90ca28c567d5469729"
+  integrity sha512-d4c7nM3LneWUiL4MssIyPHfGgVMRPh4Z7UgLsXMZ+lbAtH/6SBUFHdzZQLY2BASdh16BM/v6YCbmtQU+KIQdrg==
+
 vue-router@4.0.12:
   version "4.0.12"
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-4.0.12.tgz#8dc792cddf5bb1abcc3908f9064136de7e13c460"
