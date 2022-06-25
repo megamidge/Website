@@ -38,7 +38,7 @@
             color="primary"
           />
         </div>
-        <vue-pdf-embed
+        <pdf-embed
           source="/Sam-Smith-CV.pdf"
           :page="1"
           :width="pdfWidth"
@@ -51,12 +51,12 @@
 </template>
 
 <script>
-import VuePdfEmbed from 'vue-pdf-embed'
+import PdfEmbed from 'components/PdfEmbed.vue'
 import { computed, ref } from 'vue'
 import { useQuasar } from 'quasar'
 export default {
   name: 'HomeCV',
-  components: { VuePdfEmbed },
+  components: { PdfEmbed },
   setup() {
     const $q = useQuasar()
     const wrapperRef = ref()

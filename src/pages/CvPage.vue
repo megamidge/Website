@@ -31,24 +31,27 @@
         flat
         class="self-end q-mt-md q-mb-sm button"
       />
+
       <div ref="pdfWrapper">
-        <vue-pdf-embed source="/Sam-Smith-CV.pdf" :width="pdfWidth" />
+        <pdf-embed source="/Sam-Smith-CV.pdf" :width="pdfWidth" />
       </div>
     </div>
   </q-page>
 </template>
 
 <script>
-import VuePdfEmbed from 'vue-pdf-embed'
 import { ref, computed } from 'vue'
+import PdfEmbed from 'components/PdfEmbed.vue'
 export default {
   name: 'CvPage',
-  components: { VuePdfEmbed },
+  components: { PdfEmbed },
   setup() {
     const pdfWrapper = ref()
+
     const pdfWidth = computed(() => {
       return pdfWrapper.value?.clientWidth
     })
+
     return {
       pdfWidth,
       pdfWrapper,
