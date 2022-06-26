@@ -17,23 +17,18 @@
         class="q-pa-sm flex col-3"
       >
         <div class="full-width">
-          <q-card style="height: 100%" class="column">
-            <q-img :src="card.img" :ratio="16 / 10" />
-            <q-card-section class="text-subtitle2 q-pb-xs">
-              {{ card.title }}
-            </q-card-section>
-            <q-card-section class="col q-py-xs">
-              {{ card.desc }}
-            </q-card-section>
-            <q-card-actions>
-              <q-btn label="View Details" :to="card.link" class="full-width" />
-            </q-card-actions>
-          </q-card>
+          <preview-card v-bind="card" class="column" style="height: 100%" />
         </div>
       </div>
       <div class="q-pa-sm col-3 row">
         <div class="full-width column items-center justify-center">
-          <q-btn round icon="mdi-arrow-right" size="lg" color="accent" />
+          <q-btn
+            round
+            icon="mdi-arrow-right"
+            size="lg"
+            color="accent"
+            :to="{ name: 'Portfolio' }"
+          />
           <p class="q-mb-none text-subtitle1 text-white q-mt-sm">View All</p>
         </div>
       </div>
@@ -42,32 +37,17 @@
 </template>
 
 <script>
+import { storeToRefs } from 'pinia'
 import { ref, defineComponent } from 'vue'
+import { usePortfolioStore } from 'stores/portfolio'
+import PreviewCard from './Portfolio/PreviewCard.vue'
 export default defineComponent({
-  // name: 'ComponentName',
+  name: 'HomePortfolio',
+  components: {
+    PreviewCard,
+  },
   setup() {
-    // TODO: Pull this from sowhere instead of being hardcoded.
-    const cards = ref([
-      {
-        img: 'https://i.imgur.com/6Py5FqX.png',
-        title: 'GLSL Shaders',
-        desc: 'An exploration of various 3D visual effects through GLSL shaders.',
-        link: '/link/to/article',
-      },
-      {
-        img: 'https://i.imgur.com/XysBf4s.png',
-        title: '3D Scene with Shaders',
-        desc: 'Achieved with OpenGL, a 3D scene containing some objects, animation, and lighting.',
-        link: '/link/to/article',
-      },
-      {
-        img: 'https://i.imgur.com/qyP69yO.png',
-        title: 'This website',
-        desc: "I made this website you're viewing, here's how.",
-        link: '/link/to/article',
-      },
-    ])
-
+    const cards = storeToRefs(usePortfolioStore()).cards
     return {
       cards,
     }

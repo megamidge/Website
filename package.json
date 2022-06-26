@@ -12,16 +12,20 @@
     "build": "quasar build -m spa"
   },
   "dependencies": {
-    "@quasar/extras": "^1.0.0",
+    "@quasar/extras": "^1.14.1",
     "core-js": "^3.6.5",
     "lodash.debounce": "^4.0.8",
-    "quasar": "^2.0.0",
+    "pinia": "^2.0.14",
+    "quasar": "^2.7.3",
+    "raw-loader": "^4.0.2",
+    "vue": "^3.0.0",
+    "vue-markdown-render": "^2.0.0",
     "vue-pdf-embed": "^1.1.4",
-    "vuex": "^4.0.1"
+    "vue-router": "^4.0.0"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.13.14",
-    "@quasar/app": "^3.0.0",
+    "@quasar/app-webpack": "^3.5.4",
     "eslint": "^7.14.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-vue": "^7.0.0",

@@ -7,7 +7,14 @@ const routes = [
       {
         path: 'portfolio',
         name: 'Portfolio',
-        component: () => import('pages/Index.vue'),
+        component: () => import('pages/PortfolioPage.vue'),
+        children: [
+          {
+            path: ':portfolioItemTitle',
+            name: 'PortfolioItem',
+            component: () => import('components/Portfolio/PortfolioItem.vue'),
+          },
+        ],
       },
       {
         path: 'cv',

@@ -10,7 +10,7 @@ import { createPinia } from 'pinia'
  * with the Store instance.
  */
 
-export default store(function (/* { ssrContext } */) {
+export default store((/* { ssrContext } */) => {
   const pinia = createPinia()
 
   // You can add Pinia plugins here
