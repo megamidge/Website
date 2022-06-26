@@ -36,19 +36,6 @@
           icon="mdi-linkedin"
         />
       </div>
-      <div class="row no-wrap items-center">
-        <p class="q-ma-none text-subtitle1 q-mr-md text-bold">
-          Check out my Twitter:
-        </p>
-        <q-space />
-        <q-btn
-          color="white"
-          text-color="primary"
-          label="Twitter"
-          @click="open['twitter']"
-          icon="mdi-twitter"
-        />
-      </div>
     </div>
   </a>
 </template>
