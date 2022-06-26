@@ -1,6 +1,11 @@
 <template>
   <div>Title is {{ title }}</div>
-  <vue-markdown :source="markdown" :options="{ typographer: true }" />
+  <vue-markdown
+    :source="markdown"
+    :options="{ typographer: true }"
+    style="max-width: 100%"
+    class="markdown-view"
+  />
 </template>
 <script>
 import { computed, defineComponent, ref } from 'vue'
@@ -21,3 +26,10 @@ export default defineComponent({
   },
 })
 </script>
+<style lang="scss">
+.markdown-view {
+  * {
+    max-width: 100%;
+  }
+}
+</style>

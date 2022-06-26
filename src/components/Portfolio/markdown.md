@@ -7,35 +7,35 @@ I will list the effects implemented with pictures, but for a detailed descriptio
 
 Vertex Scaling/Manipulation: Implemented in most effects to achieve model position, size, shape.
 
-Skybox:
+###### Skybox
 
 ![Skybox](https://i.imgur.com/jD8mkYD.png)
 
-Parallax Bump-Mapping:
+###### Parallax Bump-Mapping
 
 ![Parallax Bump Mapping](https://i.imgur.com/J1g38oT.png)
 
-Animated Wood Fire (Texture Animation + Particle Effects):
+###### Animated Wood Fire (Texture Animation + Particle Effects)
 
 ![Animated Wood Fire (Texture Animation + Particle Effects)](https://i.imgur.com/vPz07Xb.png)
 
-Cube-mapped reflections and threshold masking:
+###### Cube-mapped reflections and threshold masking
 
 ![Reflections and masking](https://i.imgur.com/6Py5FqX.png)
 
-Model-Manipulation and Animation:
+###### Model-Manipulation and Animation
 
 ![Model-Manipulation and Animation](https://i.imgur.com/nNigE5A.png)
 
-Glowing Translucent Effect:
+###### Glowing Translucent Effect
 
 ![Glowing Translucent Effect](https://i.imgur.com/p0DARbA.png)
 
-Fog:
+###### Fog
 
 ![Fog](https://i.imgur.com/jKeYYf4.png)
 
-Extra Pictures:
+###### Extra Pictures
 
 ![Pigs might not be able to fly, bu this teapot can](https://i.imgur.com/5CZuJPf.png)
 
